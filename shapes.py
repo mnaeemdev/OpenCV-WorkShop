@@ -16,4 +16,8 @@ cv2.imshow('Rectangle Image',rectangle)
 line = cv2.line(img, pt1=(0,0), pt2=(512,512), color=(55,45,0), thickness=2)
 cv2.imshow('Line',line)
 
+#Text
+text= cv2.putText(img, org=(100,100), fontScale=4, color=(255,255,0), thickness=2, lineType=cv2.LINE_AA, text="Hello", fontFace=cv2.FONT_ITALIC)
+cv2.imshow('Text',text)
+
 cv2.waitKey(0)
